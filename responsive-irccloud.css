@@ -1,0 +1,164 @@
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  div#container {
+    min-width: initial;
+  }
+
+  div.memberwrapper {
+    z-index: 10000011;
+    top: 0;
+    position: absolute;
+    box-shadow: 2px 0px 10px #333;
+    transform: translateX(170px);
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+  
+  body.rightbar div.memberwrapper {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  div.buffermainwrapper {
+    position: initial;
+  }
+  
+  div#sidebarwrapper {
+    z-index: 10000011;
+    left: 0;
+    overflow-y: auto;
+    background-color: #C0DBFF;
+    box-shadow: 0px 0px 10px #333;
+    transform: translateX(-201px);
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+  
+  body.leftbar div#sidebarwrapper {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  #headercell {
+    display: none;
+  }
+  
+  #mainwrapper {
+    padding: 0;
+  }
+  
+  .mainContainer, table.buffer {
+    border: none;
+  }
+  
+  td.statuscell div.status h2.bufferHeading span.label {
+    display: block;
+    margin: 0;
+    line-height: 30px;
+    padding: 0px 4rem 0px 2rem;
+  }
+  
+  .showMembers div.buffermain {
+    padding: 0;
+  }
+  
+  .time-24hr.time-noseconds td.timecell, #timeContainer {
+    display: none;
+  }
+  
+  div.nickinputwrapper {
+    margin: 9px 9px 10px 9px;
+  }
+  
+  .extras span.extrasBar {
+    font-size: 10px;
+  }
+  
+  div.dateWrapper table, div.log div.dateChange p {
+    font-size: 11px;
+  }
+  
+  td.statuscell div.status h2.bufferHeading {
+    font-size: 10px;
+    padding: 0px;
+  }
+  
+  span.topic {
+    display: none; /* hide, for now */
+  }
+  
+  .bufferHead {
+    padding: 2px;
+    height: 30px;
+  }
+  
+  td.statuscell {
+    height: 30px;
+  }
+  
+  div.log div.me a.server,
+  div.log div.me a.user,
+  div.log div.messageRow,
+  div.shim,
+  td.inputcell textarea,
+  td.nickcell a.nick {
+    font-size: 12px;
+  }
+  
+  td.statuscell div.status p.buttons button.options {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+  
+  button.responsive-addon {
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    transition: visibility 0.0s linear 0.2s;
+  }
+  
+  button#bufferMenuBtn {
+    top: 1px;
+    left: 1px;
+  }
+  
+  button#membersListBtn {
+    top: 1px;
+    right: calc(2rem + 2px);
+  }
+  
+  body.leftbar button#bufferMenuBtn,
+  body.rightbar button#memberListBtn {
+    visibility: hidden;
+    transition: none;
+  }
+
+  table.channel.active td.statuscell div.status p.buttons button:not(.options),
+  table.channel td.statuscell div.status p.buttons button:not(.options){
+    display: none;
+  }
+  
+   td.statuscell div.status p.buttons button.options:after {
+     content: "\2af6";
+     font-size: 1.8rem;
+     position: absolute;
+     bottom: 0;
+     right: .4rem;
+   }
+  
+  td.statuscell div.status p.buttons button.options > span {
+    font-size: 0;
+    border: none;
+  }
+  
+  td.statuscell div.status p.buttons button.options > span > b {
+    display: none;
+  }
+}
