@@ -3,7 +3,8 @@
   "name": "Responsive IRCCloud",
   "description": "An Addon to make the IRCCloud app mobile friendly",
   "developer": {
-    "name": "Eitan Isaacson"
+    "name": "Eitan Isaacson",
+    "url": "https://github.com/eeejay/responsive-irccloud"
   },
   "role": "addon",
   "customizations": [{
