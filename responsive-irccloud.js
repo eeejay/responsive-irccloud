@@ -4,10 +4,6 @@ window.addEventListener('DOMContentLoaded', function() {
   vptag.content = "width=device-width, user-scalable=no, initial-scale=1";
   document.head.appendChild(vptag);
 
-  var styletag = document.createElement('style');
-  styletag.textContent = STYLE;
-  document.head.appendChild(styletag);
-
   var buffersButton = document.createElement('button');
   buffersButton.id = "bufferMenuBtn";
   buffersButton.className = 'responsive-addon';

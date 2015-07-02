@@ -1,0 +1,5 @@
+window.addEventListener('DOMContentLoaded', function() {
+  var styletag = document.createElement('style');
+  styletag.textContent = STYLE;
+  document.head.appendChild(styletag);
+});

@@ -6,4 +6,4 @@ while stylelines:
 
 print
 
-print open('responsive-irccloud.js.in').read();
+print open('inject-responsive-stylesheet.js.in').read();

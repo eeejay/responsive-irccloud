@@ -1,10 +1,10 @@
-responsive-irccloud.js: responsive-irccloud.js.in responsive-irccloud.css build.py
-	python build.py > responsive-irccloud.js
+inject-responsive-stylesheet.js: inject-responsive-stylesheet.js.in responsive-irccloud.css build.py
+	python build.py > inject-responsive-stylesheet.js
 
 clean:
-	rm -rf responsive-irccloud.js
+	rm -rf inject-responsive-stylesheet.js
 
-install: node_modules/.bin/install-to-adb responsive-irccloud.js
+install: node_modules/.bin/install-to-adb inject-responsive-stylesheet.js
 	$(CURDIR)/node_modules/.bin/install-to-adb $(CURDIR)
 
 node_modules/.bin/install-to-adb:

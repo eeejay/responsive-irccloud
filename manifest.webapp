@@ -8,7 +8,7 @@
   "role": "addon",
   "customizations": [{
     "filter": "irccloud",
-    "scripts": ["responsive-irccloud.js"]
+    "scripts": ["responsive-irccloud.js", "inject-responsive-stylesheet.js"]
   }],
   "type": "certified",
   "icons": {
