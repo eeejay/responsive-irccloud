@@ -20,12 +20,27 @@ window.addEventListener('DOMContentLoaded', function() {
     if (e.target.id == 'bufferMenuBtn') {
       document.body.classList.add('leftbar');
       document.body.classList.remove('rightbar');
+      ariaHideBuffers();
     } else if (e.target.id == 'membersListBtn') {
       document.body.classList.add('rightbar');
       document.body.classList.remove('leftbar');
+      ariaHideBuffers();
     } else {
       document.body.classList.remove('leftbar');
       document.body.classList.remove('rightbar');
+      ariaShowBuffers();
     }
   }, false)
 });
+
+function ariaShowBuffers() {
+  for (var e of document.querySelectorAll('.buffermain')) {
+    e.removeAttribute('aria-hidden');
+  }
+}
+
+function ariaHideBuffers() {
+  for (var e of document.querySelectorAll('.buffermain')) {
+    e.setAttribute('aria-hidden', true);
+  }
+}
