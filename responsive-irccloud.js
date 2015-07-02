@@ -7,14 +7,12 @@ window.addEventListener('DOMContentLoaded', function() {
   var buffersButton = document.createElement('button');
   buffersButton.id = "bufferMenuBtn";
   buffersButton.className = 'responsive-addon';
-  buffersButton.textContent = "\u2630";
   buffersButton.setAttribute('aria-label', 'Buffers list');
   document.body.appendChild(buffersButton);
 
   var membersButton = document.createElement('button');
   membersButton.id = "membersListBtn";
   membersButton.className = 'responsive-addon';
-  membersButton.textContent = "\uD83D\uDC64";
   membersButton.setAttribute('aria-label', 'Channel members');
   document.body.appendChild(membersButton);
 
