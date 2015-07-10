@@ -137,7 +137,7 @@
     display: none;
   }
 
-  #buffersContainer.canShow.show .channel.active[style="display: table;"] ~ button#membersListBtn,
+  body.inchannel #buffersContainer.canShow.showing ~ button#membersListBtn,
   #buffersContainer.canShow ~ button#bufferMenuBtn {
     display: block;
   }
