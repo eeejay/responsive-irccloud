@@ -239,4 +239,13 @@
   #mainwrapper {
     overflow-y: auto;
   }
+
+  td.statuscell div.status .identity,
+  table.password td.statuscell div.status h2.bufferHeading, table.server td.statuscell div.status h2.bufferHeading .host {
+    display: none; /* todo: we should reexpose this */
+  }
+
+  table.ssl td.statuscell div.status h2.bufferHeading {
+    background-position: 2rem 8px;
+  }
 }
