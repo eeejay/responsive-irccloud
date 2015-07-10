@@ -137,7 +137,7 @@
     display: none;
   }
 
-  body.inchannel #buffersContainer.canShow.showing ~ button#membersListBtn,
+  body.inchannel #buffersContainer.canShow.show ~ button#membersListBtn,
   #buffersContainer.canShow ~ button#bufferMenuBtn {
     display: block;
   }
