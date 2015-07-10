@@ -4,17 +4,19 @@ window.addEventListener('DOMContentLoaded', function() {
   vptag.content = "width=device-width, user-scalable=no, initial-scale=1";
   document.head.appendChild(vptag);
 
+  var buffersContainer = document.getElementById("buffersContainer");
+
   var buffersButton = document.createElement('button');
   buffersButton.id = "bufferMenuBtn";
   buffersButton.className = 'responsive-addon';
   buffersButton.setAttribute('aria-label', 'Buffers list');
-  document.body.appendChild(buffersButton);
+  buffersContainer.appendChild(buffersButton);
 
   var membersButton = document.createElement('button');
   membersButton.id = "membersListBtn";
   membersButton.className = 'responsive-addon';
   membersButton.setAttribute('aria-label', 'Channel members');
-  document.body.appendChild(membersButton);
+  buffersContainer.appendChild(membersButton);
 
   document.addEventListener('click', (e) => {
     if (e.target.id == 'bufferMenuBtn') {
