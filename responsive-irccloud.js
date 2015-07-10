@@ -4,14 +4,14 @@ window.addEventListener('DOMContentLoaded', function() {
   vptag.content = "width=device-width, user-scalable=no, initial-scale=1";
   document.head.appendChild(vptag);
 
-  var buffersContainer = document.getElementById("buffersContainer");
-
+  var maincell = document.getElementById("maincell");
   var buffersButton = document.createElement('button');
   buffersButton.id = "bufferMenuBtn";
   buffersButton.className = 'responsive-addon';
   buffersButton.setAttribute('aria-label', 'Buffers list');
-  buffersContainer.appendChild(buffersButton);
+  maincell.appendChild(buffersButton);
 
+  var buffersContainer = document.getElementById("buffersContainer");
   var membersButton = document.createElement('button');
   membersButton.id = "membersListBtn";
   membersButton.className = 'responsive-addon';
