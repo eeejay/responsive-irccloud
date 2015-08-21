@@ -39,6 +39,15 @@ function insertResponsiveExtras() {
     maincell.appendChild(membersButton);
   }
 
+  /* splash */
+  var splash = document.createElement("div");
+  splash.id = "splash";
+  var spinner = document.createElement("div");
+  spinner.className = "spinner";
+  spinner.appendChild(document.createElement("div"));
+  splash.appendChild(spinner);
+  document.body.appendChild(splash);
+
   var buffersContainer = document.getElementById("buffersContainer");
   if (buffersContainer) {
     observeInChannel(buffersContainer);

@@ -138,7 +138,7 @@
   }
 
   body.inchannel #buffersContainer.canShow.show ~ button#membersListBtn,
-  #buffersContainer.canShow ~ button#bufferMenuBtn {
+  body:not(.loading) #buffersContainer.canShow ~ button#bufferMenuBtn {
     display: block;
   }
 
@@ -276,5 +276,51 @@
 
   #enterpriseLogin {
     width: 100%;
+  }
+
+  /* splash */
+
+  #splash {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #C0DBFF;
+    display: none;
+  }
+
+  .loading #splash {
+    display: block;
+  }
+
+  .spinner {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .spinner > div {
+    height: 60px;
+    width: 60px;
+    margin: 94px auto 0 auto;
+    position: relative;
+    animation: rotation .6s infinite linear;
+    border-left: 6px solid #1E72FF;
+    border-right: 6px solid #1E72FF;
+    border-bottom: 6px solid #1E72FF;
+    border-top: 6px solid #123E92;
+    border-radius: 100%;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }
 }
