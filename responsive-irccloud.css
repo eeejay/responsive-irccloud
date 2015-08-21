@@ -248,4 +248,33 @@
   table.ssl td.statuscell div.status h2.bufferHeading {
     background-position: 2rem 8px;
   }
+
+  /* For entrprise login screen */
+
+  #enterpriseLanding {
+    box-shadow: initial;
+    width: initial;
+    margin: initial;
+    border-radius: initial;
+  }
+
+  #landingFooter .landingContainer > p:nth-child(1) {
+    display: none;
+  }
+
+  #landingFooter .landingContainer > p {
+    padding: 0;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  #enterpriseLogin > p:nth-child(1) {
+    font-size: .75em;
+  }
+
+  #enterpriseLogin {
+    width: 100%;
+  }
 }
