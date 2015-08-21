@@ -1,0 +1,9 @@
+{
+  "name": "Responsive IRCCloud",
+  "version": "0.2.0",
+  "description": "An Addon to make the IRCCloud app mobile friendly",
+  "developer": {
+    "name": "Eitan Isaacson"
+  },
+  "package_path": "dist/new-package.zip"
+}

@@ -1,2 +1,4 @@
 inject-responsive-stylesheet.js
 node_modules/
+*.sublime-*
+

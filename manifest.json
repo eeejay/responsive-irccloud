@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "version": "0.2.0",
+  "name": "Responsive IRCCloud",
+  "description": "An Addon to make the IRCCloud app mobile friendly",
+  "author": "Eitan Isaacson",
+  "homepage_url": "https://github.com/eeejay/responsive-irccloud",
+  "content_scripts": [{
+    "matches": ["*://*.irccloud.com/*", "*://irccloud.mozilla.com/*"],
+    "js": ["responsive-irccloud.js", "inject-responsive-stylesheet.js"],
+    "css": []
+  }],
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  }
+}

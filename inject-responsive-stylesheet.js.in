@@ -1,5 +1,12 @@
-window.addEventListener('DOMContentLoaded', function() {
+function injectCSS() {
+  console.log("eeejay: Injecting CSS!");
   var styletag = document.createElement('style');
   styletag.textContent = STYLE;
   document.head.appendChild(styletag);
-});
+}
+
+if (document.documentElement) {
+  injectCSS();
+} else {
+  window.addEventListener("DOMContentLoaded", injectCSS);
+}
